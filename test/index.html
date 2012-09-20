@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="mocha.css" />
+  <script src="chai.js"></script>
+  <script src="../responsiveWidgets.js"></script>
+  <script src="mocha.js"></script>
+  <script>mocha.setup('bdd')</script>
+  <script src="test.ResponsiveWidgets.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      expect = chai.expect;
+      assert = chai.assert;
+      mocha.run();
+    });
+  </script>
+</head>
+<body>
+  <div id="mocha"></div>
+</body>
+</html>
